@@ -56,29 +56,7 @@ public class EndToEndScenarios extends BaseClass{
 			Reporter.log("cart is not validated", true);
 			Assert.fail();
 		}
-		//		boolean b=true;
-		//		for(WebElement item:products)
-		//
-		//		{
-		//			String prodName =item.getText();
-		//
-		//			String product1 = f.ExcelData("SauceData", 13, 0);
-		//			String product2 = f.ExcelData("SauceData", 13, 1);
-		//			if(!(prodName.equals(product1)||prodName.equals(product2)))
-		//			{
-		//				
-		//				Reporter.log("Cart product mis match", true);
-		//				b=false;
-		//				Assert.fail();
-		//
-		//			}
-		//
-		//
-		//		}
-//		if(b)
-//		{
-//			Reporter.log("Succesfully added to the cart", true);
-//		}
+		
 		cart.getCheckOutBtn().click();
 		
 		PageCheck page=new PageCheck(driver);
@@ -131,4 +109,5 @@ public class EndToEndScenarios extends BaseClass{
 
 
 }
+
 
